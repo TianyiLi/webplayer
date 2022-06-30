@@ -1,0 +1,26 @@
+{
+  "name": "web-player",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build-draw": "postcss --use autoprefixer -o css/draw-game.css css/_draw-game.css",
+    "dev-css": "postcss --use autoprefixer -o css/draw-game.css css/_draw-game.css -w",
+    "dev": "live-server . --port=7777"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "autoprefixer": "^10.4.7",
+    "live-server": "^1.2.2",
+    "postcss": "^8.4.14"
+  },
+  "devDependencies": {
+    "postcss-cli": "^10.0.0"
+  },
+  "browserslist": [
+    "chrome >= 45"
+  ]
+}

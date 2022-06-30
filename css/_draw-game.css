@@ -1,0 +1,69 @@
+html, body {
+  margin: 0;
+  height: 100%;
+  width: 100%;
+  overflow: hidden;
+}
+video {
+  position: relative;
+  margin: 0;
+  padding: 0;
+  height: 100%;
+  width: 100%;
+  object-fit: contain;
+}
+
+video.blur {
+  filter: blur(10px);
+}
+
+#numpad {
+  position: fixed;
+  top: 40vh;
+  width: 700px;
+  height: 600px;
+  padding-top: 50px;
+  background: rgba(0, 0, 0, 0.5);
+  margin: 0 auto;
+  flex-direction: column;
+  justify-content: start;
+  align-items: center;
+  display: none;
+}
+
+#numpad.show {
+  z-index: 90;
+  width: 100%;
+  display: flex;
+}
+
+#number-display {
+  font-size: 35px;
+  width: 20rem;
+  border: unset;
+  padding: 10px 15px;
+  border-radius: 5px;
+  margin-bottom: 50px;
+}
+
+.key-wrap {
+  width: 240px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+}
+
+.key {
+  font-size: 32px;
+  padding: 10px 20px;
+  background-color: white;
+  border-radius: 8px;
+  margin-top: 10px;
+  font-weight: bold;
+}
+.key.delete {
+  width: 140px;
+}
+.key:disabled {
+  background-color: #ccc;
+}
