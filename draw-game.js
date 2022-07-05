@@ -13,7 +13,6 @@
   video.src = query.get('video');
   setTimeout(() => {
     video.classList.add('blur');
-    video.pause();
     numpad.classList.add('show');
   }, Number(query.get('timeout')) * 1000);
   video.preload = 'metadata';
