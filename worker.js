@@ -20,7 +20,7 @@ let config = {
 let messageList = [];
 let maximumMessage = 500;
 let filterMatch = undefined;
-let registerMatch = '';
+let registerMatch = new Set();
 let conn = {};
 function configure(_config) {
     _config = _config ? _config : {};
